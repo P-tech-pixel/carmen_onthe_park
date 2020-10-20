@@ -58,44 +58,12 @@
       </div>
   </div>
 
-  <div class="social-icons">
-    <ul class="list-unstyled text-center mb-0">
-      <li class="list-unstyled-item">
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="https://www.facebook.com/111it.com.au">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/coming-soon.min.js"></script>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOTjoJfP7ZMTwfAzJU6RqQc0hE1Hb0oQm4pl2_4hbBH7LKF64z/exec'
-    const form = document.forms['google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
