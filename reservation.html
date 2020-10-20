@@ -53,7 +53,7 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
       <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
       <div style="padding-bottom: 18px; color: white;"><b>Time<span style="color: red;"> *</span><br/>
-      <input type="text" id="data_7" name="Time" style="max-width : 250px;" class="form-control"/>
+      <input type="time" id="data_7" name="Time" style="max-width : 250px;" class="form-control"/>
       </div>
       <div style="padding-bottom: 18px; color: white;"><b>Number of Attendees<span style="color: red;"> *</span></b><br/>
       <select id="data_8" name="Number_of_customers" style="max-width : 250px;" class="form-control"><option>1</option>
@@ -136,7 +136,7 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .then(response => alert("Thankyou for the reservation at Carmen's on the park."))
         .catch(error => console.error('Error!', error.message))
     })
   </script>
